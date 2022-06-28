@@ -1,0 +1,76 @@
+.outerdiv {
+  background-image:  url("../images/bckg.jpeg");
+  height:  100%;
+  opacity:  0.7;
+  position:  relative;
+}
+.main {
+  position:  absolute;
+  margin:  4% 30%;
+  background-color:  #4a3f2a;
+  width:  100%;
+  max-width:  500px;
+}
+h1 {
+  text-align:  center;
+  color:  white;
+}
+.fields {
+  margin:  31px 52px;
+}
+.fields-label {
+  color:  white;
+  margin-left:  38px;
+}
+.fields-input {
+  margin-bottom:  10px;
+  padding:  5px;
+  width:  100%;
+  max-width:  300px;
+  border-color:  black;
+  border-width:  2px;
+  margin-left:  38px;
+  border-radius:  6px;
+}
+.radio-option {
+  display:  flex;
+  flex-direction:  row;
+  margin: 0px 0px 12px 0px;
+}
+.rdio-opt {
+  color:  white;
+  margin-left: 41px;
+}
+.fields .btn {
+  margin-top:  10px;
+  padding:  6px 29px;
+}
+.btn: hover {
+  color:  black;
+  background:  transparent;
+}
+.sub-btn {
+  display:  flex;
+  justify-content:  center;
+}
+.login {
+  color:  white;
+  font-size:  17px;
+}
+.login a:visited{
+  color: blue;
+}
+.log-in {
+  display:  flex;
+  justify-content:  center; text-align:  center;
+}
+/*input:focus {
+  border-color:  grey;
+}
+ input:valid {
+  border-color:  green;
+}
+input:invalid {
+  border-color:  red;
+}*/
+
