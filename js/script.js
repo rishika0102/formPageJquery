@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 
   $(".btn").click(function() {
-   debugger
    const firstName = $("#firstName").val();
    const lastName = $("#lastName").val();
    const email = $("#email").val();
@@ -43,8 +42,8 @@ $(document).ready(function() {
   });
 
    $(".btnn").click(function() {
-     console.log("login");
      debugger
+     console.log("login");
      const checkEmail = $("#checkEmail").val();
      const checkPwd = $("#checkPwd").val();
      const checkuserReccord = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : [];
@@ -54,13 +53,19 @@ $(document).ready(function() {
      });
      var x = JSON.parse(localStorage.getItem("users"));
      console.log("users....", x);
-     var user = x.filter(function(value)  {
-      console.log("value..",value);
-      if(checkEmail == value.email && checkPwd == value.pwd){
-        alert("successfully logged in");
-      } else {
-       alert("invalid credentials");
-      }
-     });
+     debugger
+     var user = x.filter((value) => {
+      if(checkEmail == value.email && checkPwd == value.pwd)
+        return true
+      else
+        return false
+    });
+     console.log(user);
+     debugger
+     if(user == "") {
+      alert("Invalid credentials");
+     } else {
+      alert("Succesfsully log In ");
+     }
     });
  });
